@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.inp {
+  @apply block h-10 w-full rounded-md bg-gray-700 p-3 text-white placeholder-white outline-none;
+}
