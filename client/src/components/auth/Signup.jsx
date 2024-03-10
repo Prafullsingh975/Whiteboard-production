@@ -12,7 +12,7 @@ const Signup = () => {
   const [signUpInput, setSignUpInput] = useState(initialSignUpState);
 
   const handleSignUpWithGoogle = () => {
-    window.open("http://localhost:5050/api/whiteboard/auth/google", "_self");
+    window.open("https://whiteboard-production.onrender.com/api/whiteboard/auth/google", "_self");
   };
 
   const handleSignUpInput = (e) => {
@@ -22,7 +22,7 @@ const Signup = () => {
   const handleSignUpWithJWT = async () => {
     try {
       const { data } = await axios.post(
-        "http://localhost:5050/api/whiteboard/auth/signup",
+        "https://whiteboard-production.onrender.com/api/whiteboard/auth/signup",
         signUpInput,
         config,
       );

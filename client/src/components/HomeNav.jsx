@@ -7,7 +7,7 @@ const HomeNav = () => {
 
   const handleLogout = async () => {
     if (user.googleId) {
-      window.open("http://localhost:5050/api/whiteboard/auth/logout", "_self");
+      window.open("https://whiteboard-production.onrender.com/api/whiteboard/auth/logout", "_self");
     }
     sessionStorage.clear("u");
     setUser(null);

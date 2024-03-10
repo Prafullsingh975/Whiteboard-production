@@ -7,7 +7,7 @@ passport.use(
     {
       clientID: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
-      callbackURL: "http://localhost:5050/api/whiteboard/auth/google/callback",
+      callbackURL: "https://whiteboard-production.onrender.com/api/whiteboard/auth/google/callback",
       scope:["profile","email"]
     },
     async function (accessToken, refreshToken, profile, done) {

@@ -13,7 +13,7 @@ const Signin = () => {
   const navigate = useNavigate();
 
   const handleSignInWithGoogle = () => {
-    window.open("http://localhost:5050/api/whiteboard/auth/google", "_self");
+    window.open("https://whiteboard-production.onrender.com/api/whiteboard/auth/google", "_self");
   };
 
   const handleLoginInput = (e) => {
@@ -24,7 +24,7 @@ const Signin = () => {
   const handleJWTLogin = async () => {
     try {
       const { data } = await axios.post(
-        "http://localhost:5050/api/whiteboard/auth/login",
+        "https://whiteboard-production.onrender.com/api/whiteboard/auth/login",
         loginInput,
         config,
       );

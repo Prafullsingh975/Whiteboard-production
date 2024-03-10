@@ -33,7 +33,7 @@ const App = () => {
   const isLogin = async () => {
     if (!loginUser || loginUser?.googleId) {
       const { data } = await axios.get(
-        "http://localhost:5050/api/whiteboard/auth/is-login",
+        "https://whiteboard-production.onrender.com/api/whiteboard/auth/is-login",
         { withCredentials: true },
       );
       sessionStorage.setItem("u", JSON.stringify(data.data));
