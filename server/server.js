@@ -15,7 +15,7 @@ connectDb(process.env.DB_URL);
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://whiteboard-production.vercel.app",
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
   })
@@ -50,7 +50,7 @@ const server = app.listen(PORT, () => {
 // Setting up socket.io connection
 const io = require("socket.io")(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://whiteboard-production.vercel.app",
   },
 });
 

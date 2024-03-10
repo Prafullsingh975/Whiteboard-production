@@ -11,8 +11,8 @@ router.get(
 router.get(
   "/google/callback",
   passport.authenticate("google", {
-    failureRedirect: "http://localhost:5173/signin",
-    successRedirect: "http://localhost:5173/room",
+    failureRedirect: "https://whiteboard-production.vercel.app/signin",
+    successRedirect: "https://whiteboard-production.vercel.app/room",
   })
 );
 

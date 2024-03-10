@@ -16,7 +16,7 @@ const logout = (req, res, next) => {
   try {
     req.logout((err) => {
       if (err) return next(err);
-      res.redirect("http://localhost:5173/signin");
+      res.redirect("https://whiteboard-production.vercel.app/signin");
     });
     // return res.status(200).json({message:"Logout Successfully",success:true})
   } catch (error) {

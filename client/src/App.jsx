@@ -15,7 +15,7 @@ import Protected from "./components/auth/Protected";
 import JoineRoom from "./pages/JoineRoom";
 
 // Setup Socket io on client
-const server = "http://localhost:5050";
+const server = "https://whiteboard-production.onrender.com";
 const socketOptions = {
   forceNew: true,
   reconnectionAttempts: "Infinity",
