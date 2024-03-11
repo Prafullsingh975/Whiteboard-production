@@ -12,7 +12,7 @@ router.get(
   "/google/callback",
   passport.authenticate("google", {
     failureRedirect: "https://whiteboard-production.vercel.app/signin",
-    successRedirect: "https://whiteboard-production.vercel.app/",
+    successRedirect: "https://whiteboard-production.vercel.app/room",
   })
 );
 
