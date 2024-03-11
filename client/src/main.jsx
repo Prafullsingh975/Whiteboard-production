@@ -14,9 +14,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <UserContextProvider>
         <SocketProvider>
           <ChatContextProvider>
-            <HashRouter>
+            <BrowserRouter>
               <App />
-            </HashRouter>
+            </BrowserRouter>
           </ChatContextProvider>
         </SocketProvider>
       </UserContextProvider>
